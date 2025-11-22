@@ -42,6 +42,8 @@ Contains cleaned, enriched tables:
 ](https://lookerstudio.google.com/reporting/ca42842e-7e5a-4f55-96df-a8b52e247375)
 
 ## Repository Structure
+
+```
 /sql
 create_customer_cohorts.sql
 create_product_performance.sql
@@ -51,7 +53,7 @@ looker_studio_screenshots/
 dashboard_link.txt
 README.md
 LICENSE
-
+```
 
 ## Reproduce This Project
 
@@ -59,7 +61,9 @@ LICENSE
 Use your GCP project ID: ecommerce-analytics-12345
 
 ### Step 2 — Create Datasets
+
 -raw_data
+
 -analytics
 
 ### Step 3 — Upload CSVs
