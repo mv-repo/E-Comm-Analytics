@@ -43,10 +43,18 @@ Contains cleaned, enriched tables:
 
 ## Repository Structure
 
-```
+```Bash
+data_generation/
+  create_raw_tables.sql
+  generate_customers.sql  
+  generate_products.sql   
+  generate_orders.sql
+  generate_order_items.sql 
+
 create_customer_cohorts.sql
 create_product_performance.sql
 create_daily_metrics.sql
+
 README.md
 ```
 
