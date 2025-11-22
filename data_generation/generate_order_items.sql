@@ -13,5 +13,5 @@ SELECT
     p.price AS price
 FROM orders o
 JOIN products p
-ON RAND() < 0.02   -- randomly assign products to orders (~3 items/order)
+ON RAND() < 0.25   -- roughly 1–2 items per order
 LIMIT 60000;
