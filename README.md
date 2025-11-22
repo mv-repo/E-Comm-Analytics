@@ -61,17 +61,24 @@ Use your GCP project ID: ecommerce-analytics-12345
 
 -analytics
 
-### Step 3 — Upload CSVs
-Upload raw CSV files into the raw dataset:
-- customers_raw  
-- orders_raw  
-- order_items_raw  
-- products_raw  
+### Step 3 — Generate Synthetic Data (No CSV Required)
+Run the SQL scripts in `/data_generation/`:
 
-### Step 4 — Run Transformation SQL
-Run SQL scripts from the `/sql` folder in BigQuery.
+1. `create_raw_tables.sql` — Creates empty raw tables  
+2. `generate_customers.sql` — Creates 1,000 synthetic customers  
+3. `generate_products.sql` — Creates a clean 5-product catalog  
+4. `generate_orders.sql` — Generates 10,000 synthetic orders  
+5. `generate_order_items.sql` — Generates realistic order items  
+
+### Step 4 — Build Analytics Tables
+Run SQL in:
+- `create_customer_cohorts.sql`
+- `create_product_performance.sql`
+- `create_daily_metrics.sql`
 
 ### Step 5 — Build Looker Studio Dashboard
-Add BigQuery tables as data sources → Create charts → Publish dashboard.
+- Connect BigQuery tables  
+- Create Visualizations  
+- Publish the dashboard  
 
 
