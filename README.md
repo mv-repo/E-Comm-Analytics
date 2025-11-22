@@ -44,15 +44,10 @@ Contains cleaned, enriched tables:
 ## Repository Structure
 
 ```
-/sql
 create_customer_cohorts.sql
 create_product_performance.sql
 create_daily_metrics.sql
-/dashboard
-looker_studio_screenshots/
-dashboard_link.txt
 README.md
-LICENSE
 ```
 
 ## Reproduce This Project
